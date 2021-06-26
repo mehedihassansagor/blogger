@@ -20,7 +20,7 @@ const AddEvent = () => {
       imageURL: imageURL,
     };
 
-    const url = `http://localhost:5000/addEvent`;
+    const url = `https://vast-hamlet-26858.herokuapp.com/addEvent`;
     console.log(eventData);
     fetch(url, {
       method: "POST",

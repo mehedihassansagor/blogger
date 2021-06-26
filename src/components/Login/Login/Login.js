@@ -17,7 +17,7 @@ const Login = () => {
   let { from } = location.state || { from: { pathname: "/" } };
 
   useEffect(() => {
-    fetch("http://localhost:5000/adminDetails")
+    fetch("https://vast-hamlet-26858.herokuapp.com/adminDetails")
       .then((res) => res.json())
       .then((data) => setAdmins(data));
   }, []);

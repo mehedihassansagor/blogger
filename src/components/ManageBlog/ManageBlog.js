@@ -8,13 +8,13 @@ const ManageBlog = () => {
   const [blogs, setBlog] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/event")
+    fetch("https://vast-hamlet-26858.herokuapp.com/event")
       .then((res) => res.json())
       .then((data) => setBlog(data));
   }, []);
 
   const deletePost = (id) => {
-    fetch(`http://localhost:5000/deleteBlog/${id}`, {
+    fetch(`https://vast-hamlet-26858.herokuapp.com/deleteBlog/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

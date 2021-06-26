@@ -8,7 +8,7 @@ const Detail = () => {
   console.log(blogs);
 
   useEffect(() => {
-    fetch("http://localhost:5000/event")
+    fetch("https://vast-hamlet-26858.herokuapp.com/event")
       .then((res) => res.json())
       .then((data) => setBlog(data));
   }, [blogs._id]);
